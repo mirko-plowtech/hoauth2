@@ -7,13 +7,13 @@ module Network.OAuth2.Experiment.Pkce (
 ) where
 
 import Control.Monad.IO.Class
-import Crypto.Hash qualified as H
-import Crypto.Random qualified as Crypto
-import Data.ByteArray qualified as ByteArray
-import Data.ByteString qualified as BS
-import Data.ByteString.Base64.URL qualified as B64
+import qualified Crypto.Hash as H
+import qualified Crypto.Random as Crypto
+import qualified Data.ByteArray as ByteArray
+import qualified Data.ByteString as BS
+import qualified Data.ByteString.Base64.URL as B64
 import Data.Text (Text)
-import Data.Text.Encoding qualified as T
+import qualified Data.Text.Encoding as T
 import Data.Word
 
 newtype CodeChallenge = CodeChallenge {unCodeChallenge :: Text}

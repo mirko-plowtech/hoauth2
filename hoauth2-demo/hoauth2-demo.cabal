@@ -44,7 +44,6 @@ executable hoauth2-demo
     DataKinds
     DeriveGeneric
     GeneralizedNewtypeDeriving
-    ImportQualifiedPost
     OverloadedStrings
     RecordWildCards
     TypeApplications

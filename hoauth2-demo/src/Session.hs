@@ -1,4 +1,3 @@
-{-# LANGUAGE ImportQualifiedPost #-}
 {-# LANGUAGE OverloadedStrings #-}
 
 {- mimic server side session store -}
@@ -8,8 +7,8 @@ module Session where
 import Control.Concurrent.MVar
 import Control.Monad.IO.Class
 import Control.Monad.Trans.Except
-import Data.HashMap.Strict qualified as Map
-import Data.Text.Lazy qualified as TL
+import qualified Data.HashMap.Strict as Map
+import qualified Data.Text.Lazy as TL
 import Types
 
 type CacheStore = MVar (Map.HashMap TL.Text DemoAppEnv)

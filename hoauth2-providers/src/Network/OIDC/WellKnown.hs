@@ -6,10 +6,10 @@ import Control.Monad.Except
 import Data.Aeson
 import Data.Bifunctor
 import Data.ByteString.Lazy (ByteString)
-import Data.ByteString.Lazy qualified as BSL
+import qualified Data.ByteString.Lazy as BSL
 import Data.Text.Lazy (Text)
-import Data.Text.Lazy qualified as TL
-import Data.Text.Lazy.Encoding qualified as TL
+import qualified Data.Text.Lazy as TL
+import qualified Data.Text.Lazy.Encoding as TL
 import GHC.Generics
 import Network.HTTP.Simple
 import Network.HTTP.Types.Status

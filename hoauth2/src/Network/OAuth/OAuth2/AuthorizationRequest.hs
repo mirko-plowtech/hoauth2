@@ -7,8 +7,8 @@ module Network.OAuth.OAuth2.AuthorizationRequest where
 
 import Data.Aeson
 import Data.Function (on)
-import Data.List qualified as List
-import Data.Text.Encoding qualified as T
+import qualified Data.List as List
+import qualified Data.Text.Encoding as T
 import GHC.Generics (Generic)
 import Lens.Micro (over)
 import Network.OAuth.OAuth2.Internal

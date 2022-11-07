@@ -1,7 +1,6 @@
 {-# LANGUAGE ExistentialQuantification #-}
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE GADTs #-}
-{-# LANGUAGE ImportQualifiedPost #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE RankNTypes #-}
 {-# LANGUAGE ScopedTypeVariables #-}
@@ -14,22 +13,22 @@ import Control.Monad
 import Control.Monad.IO.Class
 import Control.Monad.Trans.Except
 import Data.Aeson
-import Data.Aeson qualified as Aeson
-import Data.ByteString.Char8 qualified as BS8
+import qualified Data.Aeson as Aeson
+import qualified Data.ByteString.Char8 as BS8
 import Data.Maybe
 import Data.Text.Lazy (Text)
-import Data.Text.Lazy qualified as TL
+import qualified Data.Text.Lazy as TL
 import Idp
-import Network.Google.OAuth2.JWT qualified as GJwt
+import qualified Network.Google.OAuth2.JWT as GJwt
 import Network.HTTP.Conduit
 import Network.HTTP.Types
 import Network.OAuth.OAuth2
-import Network.OAuth.OAuth2 qualified as OAuth2
-import Network.OAuth.OAuth2.TokenRequest qualified as TR
+import qualified Network.OAuth.OAuth2 as OAuth2
+import qualified Network.OAuth.OAuth2.TokenRequest as TR
 import Network.OAuth2.Experiment
-import Network.OAuth2.Provider.Auth0 qualified as IAuth0
-import Network.OAuth2.Provider.Okta qualified as IOkta
-import Network.Wai qualified as WAI
+import qualified Network.OAuth2.Provider.Auth0 as IAuth0
+import qualified Network.OAuth2.Provider.Okta as IOkta
+import qualified Network.Wai as WAI
 import Network.Wai.Handler.Warp (run)
 import Network.Wai.Middleware.Static
 import Session

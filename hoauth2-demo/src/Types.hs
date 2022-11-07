@@ -9,11 +9,11 @@ module Types where
 import Data.Aeson
 import Data.Default
 import Data.Maybe
-import Data.Text.Lazy qualified as TL
+import qualified Data.Text.Lazy as TL
 import Network.OAuth.OAuth2 hiding (RefreshToken)
 import Network.OAuth2.Experiment
 import Text.Mustache
-import Text.Mustache qualified as M
+import qualified Text.Mustache as M
 import Prelude hiding (id)
 
 class HasDemoLoginUser a where

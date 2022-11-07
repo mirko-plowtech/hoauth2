@@ -4,7 +4,6 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE FlexibleInstances #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
-{-# LANGUAGE ImportQualifiedPost #-}
 {-# LANGUAGE InstanceSigs #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE RankNTypes #-}
@@ -18,22 +17,22 @@ import Control.Monad.IO.Class (MonadIO (..))
 import Control.Monad.Trans.Except (ExceptT (..), throwE)
 import Data.Aeson (FromJSON)
 import Data.Bifunctor
-import Data.ByteString qualified as BS
-import Data.ByteString.Lazy.Char8 qualified as BSL
+import qualified Data.ByteString as BS
+import qualified Data.ByteString.Lazy.Char8 as BSL
 import Data.Default (Default (def))
 import Data.Kind
 import Data.Map.Strict (Map)
-import Data.Map.Strict qualified as Map
+import qualified Data.Map.Strict as Map
 import Data.Set (Set)
-import Data.Set qualified as Set
+import qualified Data.Set as Set
 import Data.String
-import Data.Text.Encoding qualified as T
+import qualified Data.Text.Encoding as T
 import Data.Text.Lazy (Text)
-import Data.Text.Lazy qualified as TL
+import qualified Data.Text.Lazy as TL
 import Network.HTTP.Conduit
 import Network.OAuth.OAuth2 hiding (RefreshToken)
-import Network.OAuth.OAuth2 qualified as OAuth2
-import Network.OAuth.OAuth2.TokenRequest qualified as TR
+import qualified Network.OAuth.OAuth2 as OAuth2
+import qualified Network.OAuth.OAuth2.TokenRequest as TR
 import Network.OAuth2.Experiment.Pkce
 import Network.OAuth2.Experiment.Utils
 import URI.ByteString hiding (UserInfo)

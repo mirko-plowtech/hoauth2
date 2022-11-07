@@ -29,7 +29,6 @@ library
     DataKinds
     DeriveGeneric
     GeneralizedNewtypeDeriving
-    ImportQualifiedPost
     OverloadedStrings
     RecordWildCards
     TypeApplications

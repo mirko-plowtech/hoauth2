@@ -12,9 +12,9 @@ import Control.Monad.Catch
 import Data.Aeson
 import Data.Aeson.Types (Parser, explicitParseFieldMaybe)
 import Data.Binary (Binary)
-import Data.ByteString qualified as BS
-import Data.ByteString.Char8 qualified as BS8
-import Data.ByteString.Lazy qualified as BSL
+import qualified Data.ByteString as BS
+import qualified Data.ByteString.Char8 as BS8
+import qualified Data.ByteString.Lazy as BSL
 import Data.Default
 import Data.Maybe
 import Data.Text (Text, pack, unpack)
@@ -24,8 +24,8 @@ import GHC.Generics
 import Lens.Micro
 import Lens.Micro.Extras
 import Network.HTTP.Conduit as C
-import Network.HTTP.Types qualified as H
-import Network.HTTP.Types qualified as HT
+import qualified Network.HTTP.Types as H
+import qualified Network.HTTP.Types as HT
 import Paths_hoauth2 (version)
 import URI.ByteString
 import URI.ByteString.Aeson ()

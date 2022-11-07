@@ -2,11 +2,11 @@ module Network.OAuth2.Experiment.Utils where
 
 import Data.Bifunctor
 import Data.ByteString (ByteString)
-import Data.ByteString.Char8 qualified as BS8
+import qualified Data.ByteString.Char8 as BS8
 import Data.Map.Strict (Map)
-import Data.Map.Strict qualified as Map
-import Data.Text.Encoding qualified as TE
-import Data.Text.Lazy qualified as TL
+import qualified Data.Map.Strict as Map
+import qualified Data.Text.Encoding as TE
+import qualified Data.Text.Lazy as TL
 
 tlToBS :: TL.Text -> ByteString
 tlToBS = TE.encodeUtf8 . TL.toStrict

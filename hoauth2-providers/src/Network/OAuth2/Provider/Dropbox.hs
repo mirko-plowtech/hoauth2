@@ -7,8 +7,8 @@
 module Network.OAuth2.Provider.Dropbox where
 
 import Data.Aeson
-import Data.Map.Strict qualified as Map
-import Data.Set qualified as Set
+import qualified Data.Map.Strict as Map
+import qualified Data.Set as Set
 import Data.Text.Lazy (Text)
 import GHC.Generics
 import Network.OAuth.OAuth2

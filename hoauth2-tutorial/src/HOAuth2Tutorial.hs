@@ -1,5 +1,4 @@
 {-# LANGUAGE DeriveGeneric #-}
-{-# LANGUAGE ImportQualifiedPost #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes #-}
 
@@ -110,11 +109,11 @@ import Control.Monad (void)
 import Control.Monad.IO.Class (liftIO)
 import Control.Monad.Trans.Except
 import Data.Aeson (FromJSON)
-import Data.ByteString.Char8 qualified as BS
-import Data.ByteString.Lazy.Char8 qualified as BSL
+import qualified Data.ByteString.Char8 as BS
+import qualified Data.ByteString.Lazy.Char8 as BSL
 import Data.IORef (IORef, newIORef, readIORef, writeIORef)
-import Data.Text.Encoding qualified as T
-import Data.Text.Lazy qualified as TL
+import qualified Data.Text.Encoding as T
+import qualified Data.Text.Lazy as TL
 import GHC.Generics (Generic)
 import Network.HTTP.Conduit (newManager, tlsManagerSettings)
 import Network.HTTP.Types (status302)
@@ -128,11 +127,11 @@ import Network.OAuth.OAuth2 (
   appendQueryParams,
   fetchAccessToken,
  )
-import Network.OAuth.OAuth2.TokenRequest qualified as TR
+import qualified Network.OAuth.OAuth2.TokenRequest as TR
 import URI.ByteString (URI, serializeURIRef')
 import URI.ByteString.QQ (uri)
 import Web.Scotty (ActionM, scotty)
-import Web.Scotty qualified as Scotty
+import qualified Web.Scotty as Scotty
 
 ------------------------------
 

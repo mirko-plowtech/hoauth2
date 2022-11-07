@@ -8,8 +8,8 @@ module Network.OAuth2.Provider.Fitbit where
 
 import Control.Monad (mzero)
 import Data.Aeson
-import Data.Map.Strict qualified as Map
-import Data.Set qualified as Set
+import qualified Data.Map.Strict as Map
+import qualified Data.Set as Set
 import Data.Text.Lazy (Text)
 import Network.OAuth.OAuth2
 import Network.OAuth2.Experiment

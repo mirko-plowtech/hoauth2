@@ -14,34 +14,34 @@ import GHC.Generics
 import Control.Monad.IO.Class
 import Control.Monad.Trans.Except
 import Data.Aeson
-import Data.Aeson qualified as Aeson
-import Data.Aeson.Key qualified as Aeson
-import Data.Aeson.KeyMap qualified as Aeson
+import qualified Data.Aeson as Aeson
+import qualified Data.Aeson.Key as Aeson
+import qualified Data.Aeson.KeyMap as Aeson
 import Data.Bifunctor
-import Data.ByteString qualified as BS
+import qualified Data.ByteString as BS
 import Data.Default
-import Data.Map.Strict qualified as Map
+import qualified Data.Map.Strict as Map
 import Data.Maybe
-import Data.Set qualified as Set
+import qualified Data.Set as Set
 import Data.Text.Lazy (Text)
-import Data.Text.Lazy qualified as TL
-import Env qualified
+import qualified Data.Text.Lazy as TL
+import qualified Env
 import Lens.Micro
 import Network.OAuth2.Experiment
-import Network.OAuth2.Provider.Auth0 qualified as IAuth0
-import Network.OAuth2.Provider.AzureAD qualified as IAzureAD
-import Network.OAuth2.Provider.Dropbox qualified as IDropbox
-import Network.OAuth2.Provider.Facebook qualified as IFacebook
-import Network.OAuth2.Provider.Fitbit qualified as IFitbit
-import Network.OAuth2.Provider.Github qualified as IGithub
-import Network.OAuth2.Provider.Google qualified as IGoogle
-import Network.OAuth2.Provider.Linkedin qualified as ILinkedin
-import Network.OAuth2.Provider.Okta qualified as IOkta
-import Network.OAuth2.Provider.Slack qualified as ISlack
-import Network.OAuth2.Provider.StackExchange qualified as IStackExchange
-import Network.OAuth2.Provider.Twitter qualified as ITwitter
-import Network.OAuth2.Provider.Weibo qualified as IWeibo
-import Network.OAuth2.Provider.ZOHO qualified as IZOHO
+import qualified Network.OAuth2.Provider.Auth0 as IAuth0
+import qualified Network.OAuth2.Provider.AzureAD as IAzureAD
+import qualified Network.OAuth2.Provider.Dropbox as IDropbox
+import qualified Network.OAuth2.Provider.Facebook as IFacebook
+import qualified Network.OAuth2.Provider.Fitbit as IFitbit
+import qualified Network.OAuth2.Provider.Github as IGithub
+import qualified Network.OAuth2.Provider.Google as IGoogle
+import qualified Network.OAuth2.Provider.Linkedin as ILinkedin
+import qualified Network.OAuth2.Provider.Okta as IOkta
+import qualified Network.OAuth2.Provider.Slack as ISlack
+import qualified Network.OAuth2.Provider.StackExchange as IStackExchange
+import qualified Network.OAuth2.Provider.Twitter as ITwitter
+import qualified Network.OAuth2.Provider.Weibo as IWeibo
+import qualified Network.OAuth2.Provider.ZOHO as IZOHO
 import Session
 import System.Directory
 import Types

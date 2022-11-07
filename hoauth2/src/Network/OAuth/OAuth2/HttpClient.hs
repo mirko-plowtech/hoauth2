@@ -29,13 +29,13 @@ module Network.OAuth.OAuth2.HttpClient (
 import Control.Monad.IO.Class (MonadIO (..))
 import Control.Monad.Trans.Except (ExceptT (..), throwE)
 import Data.Aeson (FromJSON, eitherDecode)
-import Data.ByteString.Char8 qualified as BS
-import Data.ByteString.Lazy.Char8 qualified as BSL
+import qualified Data.ByteString.Char8 as BS
+import qualified Data.ByteString.Lazy.Char8 as BSL
 import Data.Maybe (fromJust, isJust)
-import Data.Text.Encoding qualified as T
+import qualified Data.Text.Encoding as T
 import Lens.Micro (over)
 import Network.HTTP.Conduit
-import Network.HTTP.Types qualified as HT
+import qualified Network.HTTP.Types as HT
 import Network.OAuth.OAuth2.Internal
 import URI.ByteString (URI, URIRef, queryL, queryPairsL)
 
